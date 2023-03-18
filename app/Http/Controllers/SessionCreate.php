@@ -1,0 +1,15 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class SessionCreate extends Controller
+{
+
+    public function __invoke(Request $request)
+    {
+        
+        return "toDo: login view";
+    }
+}
