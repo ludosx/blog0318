@@ -9,7 +9,7 @@
 
     <h1 class="text-3xl text-center font-bold">Login</h1>
 
-    <form class="mt-4" method="post" action="{{ route('session.store')  }}">
+    <form class="mt-4" method="post" action="{{ route('session.store') }}">
     @csrf
 
     <input type="email" class="border border-gray-200 rounded-md bg-gray-200 w-full text-lg placeholder-gray-900 p-2 my-2 focus:bg-white" placeholder="Email" id="email" name="email">

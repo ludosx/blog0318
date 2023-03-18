@@ -26,7 +26,7 @@
             </li>
         @else
             <li class="mx-6">
-                <a href="route('session.create')" class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md">Login</a>
+                <a href="{{ route('session.create') }}" class="font-semibold hover:bg-indigo-700 py-3 px-4 rounded-md">Login</a>
             </li>
             <li>
                 <a href="{{route('register.create')}}" class="font-semibold border-2 border-white py-2 px-4 rounded-md hover:bg-white hover:text-indigo-700">Register</a>

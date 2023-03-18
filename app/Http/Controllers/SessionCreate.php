@@ -10,6 +10,6 @@ class SessionCreate extends Controller
     public function __invoke(Request $request)
     {
         
-        return "toDo: login view";
+        return view('login');
     }
 }
