@@ -3,14 +3,16 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\User;
+
 use App\Models\Post;
 
-class HomeController extends Controller
+class PostStore extends Controller
 {
 
     public function __invoke(Request $request)
     {
-        return view('home', ['posts' => Post::all()]);
+         Post::create(request(['user_id', 'title', 'text_post']));
+
+        return redirect(route('home'));
     }
 }
