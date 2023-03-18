@@ -22,7 +22,7 @@
             <li class="mx-6">
                 <p class="text-xl">Hi <b>{{ auth()->user()->name }}</b></p>
             <li>
-                <a href="route('session.destroy')" class="font-bold py-2 px-4 rounded-md bg-red-500 hover:bg-red-600">Logout</a>
+                <a href="{{ route('session.destroy') }}" class="font-bold py-2 px-4 rounded-md bg-red-500 hover:bg-red-600">Logout</a>
             </li>
         @else
             <li class="mx-6">

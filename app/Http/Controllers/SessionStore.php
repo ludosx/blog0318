@@ -10,7 +10,7 @@ class SessionStore extends Controller
     public function __invoke(Request $request)
     {
         if(auth()->attempt(request(['email', 'password']))) {
-            return "to do-> redirect(route('home'));";
+            return redirect(route('home'));
         }
         else {
             return back()->withErrors([

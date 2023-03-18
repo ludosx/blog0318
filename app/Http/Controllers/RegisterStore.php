@@ -21,6 +21,6 @@ class RegisterStore extends Controller
 
         auth()->login($user);
 
-        return "to do-> redirect(route('home'))";
+        return redirect(route('home'));
     }
 }
