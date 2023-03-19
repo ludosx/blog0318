@@ -16,7 +16,6 @@ class AnswerCreate extends Controller
         return view('answer', [
             'post' => Post::find($request->post_id),
             'answers' => Answer::where('post_id', $request->post_id)->get()
-            //'answers' => Answer::all()
         ]);
     }
 }
