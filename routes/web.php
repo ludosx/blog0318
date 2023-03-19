@@ -10,6 +10,8 @@ use App\Http\Controllers\SessionStore;
 use App\Http\Controllers\SessionDestroy;
 use App\Http\Controllers\PostCreate;
 use App\Http\Controllers\PostStore;
+use App\Http\Controllers\AnswerCreate;
+use App\Http\Controllers\AnswerStore;
 
 
 Route::get('/', HomeController::class)
@@ -28,4 +30,8 @@ Route::get('/post', PostCreate::class)
     ->name('post.create');
 Route::post('/post', PostStore::class)
     ->name('post.store');
+Route::post('/answer', AnswerCreate::class)
+    ->name('answer.create');
+Route::post('/answer.store', AnswerStore::class)
+    ->name('answer.store');
 
