@@ -21,12 +21,13 @@ Route::get('/register', RegisterCreate::class)
 Route::post('/register', RegisterStore::class)
     ->name('register.store');
 Route::get('/login', SessionCreate::class)
-    ->name('session.create');
+    ->name('login');
 Route::post('/login', SessionStore::class)
     ->name('session.store');
 Route::get('/logout', SessionDestroy::class)
     ->name('session.destroy');
 Route::get('/post', PostCreate::class)
+    ->middleware('auth')
     ->name('post.create');
 Route::post('/post', PostStore::class)
     ->name('post.store');

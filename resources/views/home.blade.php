@@ -20,7 +20,7 @@
         @csrf
     @endauth
     @guest
-        <form class="mt-4" method="get" action="{{ route('session.create') }}">  
+        <form class="mt-4" method="get" action="{{ route('login') }}">  
     @endguest
     <p>Author: {{ ($userClass->find($post->user_id))->name }}</p>
     <p>{{ $post->text_post }}</p>
