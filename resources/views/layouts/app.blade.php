@@ -12,7 +12,8 @@
 
 <body class="bg-gray-100 text gray-800">
 
-    <nav class="flex py-5 bg-indigo-500 text-white">
+    <!--nav class="flex py-5 bg-indigo-500 text-white"-->
+    <nav class="fixed top-0 left-0 right-0 flex py-5 bg-indigo-500 text-white">
 
         @if (auth()->check()) 
         <div class="w-1/2 px-12 mr-auto">

@@ -25,9 +25,7 @@
     <p>Author: {{ ($userClass->find($post->user_id))->name }}</p>
     <p>{{ $post->text_post }}</p>
     <input type="hidden" name="post_id" value="{{ $post->id }}">
-
-    <button type="submit" class="rounded-md bg-indigo-500 w-full text-lg text-white font-semibold p-2 my-3 hover:bg-indigo-600">Show</button>
-
+    <button type="submit" class="block mx-auto rounded-md bg-indigo-500 w-4/5 text-lg text-white font-semibold p-2 my-3 hover:bg-indigo-600">Show</button>
     </form>
 
 </div>
